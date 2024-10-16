@@ -7,3 +7,22 @@ const posts = [
 
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
+
+//esercizio svolto con forEach
+let authors = [];
+
+posts.forEach(post => {
+  authors.push(post.author)
+})
+
+console.log(authors);
+
+
+//svolto con for
+const autori = [];
+
+for (let i = 0; i < posts.length; i++){
+  autori.push(posts[i].author)
+}
+
+console.log(autori);
