@@ -6,3 +6,14 @@ const people = [
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+
+//risoluzione esercizio usando map
+const names = people.map(person => person.name).join(', ');
+console.log(names);
+
+//risoluzione usando il ciclo for (facoltativo)
+for(let i = 0; i < people.length; i++){
+  console.log(people[i].name);
+  
+}
+
